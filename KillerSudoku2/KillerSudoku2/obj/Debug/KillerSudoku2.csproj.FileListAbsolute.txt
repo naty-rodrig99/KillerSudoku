@@ -1,0 +1,20 @@
+C:\Users\naty9\OneDrive\Documentos\TEC\4 Semestre\Analisis de Algoritmos\Progra2 Analisis\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.csprojResolveAssemblyReference.cache
+C:\Users\naty9\OneDrive\Documentos\TEC\4 Semestre\Analisis de Algoritmos\Progra2 Analisis\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.Form1.resources
+C:\Users\naty9\OneDrive\Documentos\TEC\4 Semestre\Analisis de Algoritmos\Progra2 Analisis\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.Properties.Resources.resources
+C:\Users\naty9\OneDrive\Documentos\TEC\4 Semestre\Analisis de Algoritmos\Progra2 Analisis\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.csproj.GenerateResource.cache
+C:\Users\naty9\OneDrive\Documentos\TEC\4 Semestre\Analisis de Algoritmos\Progra2 Analisis\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.csproj.CoreCompileInputs.cache
+C:\Users\naty9\OneDrive\Documentos\TEC\4 Semestre\Analisis de Algoritmos\Progra2 Analisis\KillerSudoku2\KillerSudoku2\bin\Debug\KillerSudoku2.exe.config
+C:\Users\naty9\OneDrive\Documentos\TEC\4 Semestre\Analisis de Algoritmos\Progra2 Analisis\KillerSudoku2\KillerSudoku2\bin\Debug\KillerSudoku2.exe
+C:\Users\naty9\OneDrive\Documentos\TEC\4 Semestre\Analisis de Algoritmos\Progra2 Analisis\KillerSudoku2\KillerSudoku2\bin\Debug\KillerSudoku2.pdb
+C:\Users\naty9\OneDrive\Documentos\TEC\4 Semestre\Analisis de Algoritmos\Progra2 Analisis\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.exe
+C:\Users\naty9\OneDrive\Documentos\TEC\4 Semestre\Analisis de Algoritmos\Progra2 Analisis\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.pdb
+C:\Users\Soledad\Desktop\KillerSudoku2\KillerSudoku2\bin\Debug\KillerSudoku2.exe.config
+C:\Users\Soledad\Desktop\KillerSudoku2\KillerSudoku2\bin\Debug\KillerSudoku2.exe
+C:\Users\Soledad\Desktop\KillerSudoku2\KillerSudoku2\bin\Debug\KillerSudoku2.pdb
+C:\Users\Soledad\Desktop\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.csprojAssemblyReference.cache
+C:\Users\Soledad\Desktop\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.Form1.resources
+C:\Users\Soledad\Desktop\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.Properties.Resources.resources
+C:\Users\Soledad\Desktop\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.csproj.GenerateResource.cache
+C:\Users\Soledad\Desktop\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.csproj.CoreCompileInputs.cache
+C:\Users\Soledad\Desktop\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.exe
+C:\Users\Soledad\Desktop\KillerSudoku2\KillerSudoku2\obj\Debug\KillerSudoku2.pdb
