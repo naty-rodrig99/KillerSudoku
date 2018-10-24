@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace KillerSudoku2
 {
@@ -59,7 +60,6 @@ namespace KillerSudoku2
                     box.Multiline = true;
                     box.Text += Environment.NewLine;
                     box.Text += Convert.ToString(sudoku);
-
                 }
             }
 
@@ -89,8 +89,6 @@ namespace KillerSudoku2
                             operacion = matriz.buscarOperation(row, clm);
                             box.Text = Convert.ToString(numero)+ Convert.ToString(operacion);
                            
-                           
-                            
                             if (valor == 'c')
                             {
                                 box.BackColor = Color.YellowGreen;
@@ -123,9 +121,6 @@ namespace KillerSudoku2
                                 box.BackColor = Color.DarkTurquoise;
                                 box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
                             }
-
-                        
-                    
                 }
             }
             
@@ -722,26 +717,41 @@ namespace KillerSudoku2
 
         private void draw(int tamano, char[,] matriz)
         {
-            /*char[,] mDraw;
-            mDraw = new char[tamano*35, tamano*35];
-            int bound0 = matriz.GetUpperBound(0);
-            int bound1 = matriz.GetUpperBound(1);
 
-            for (int i = 0; i <= bound1; i = i++)
-            {
-                for (int j = 0; j <= bound1; j++)
-                {
-                    if(matriz[i,j] == 'c')
-                    {
-                        //e.Graphics.FillRectangle(Brushes.GreenYellow, 70, 35, 70, 70);
-                    }
-                }
-            }*/
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Resolver(Convert.ToInt32(numericUpDown1.Value));
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hilos(int numOfThreads)
+        {
+            WaitHandle[] waitHandles = new WaitHandle[numOfThreads];
+
+            for (int i = 0; i < numOfThreads; i++)
+            {
+                var j = i;
+                var handle = new EventWaitHandle(false, EventResetMode.ManualReset);
+                var thread = new Thread(() =>
+                {
+                    Thread.Sleep(j * 1000);
+                    handle.Set();
+                });
+                waitHandles[j] = handle;
+                thread.Start();
+            }
+            WaitHandle.WaitAll(waitHandles);
         }
     }
 }

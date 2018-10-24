@@ -48,7 +48,10 @@
             this.table5x5 = new System.Windows.Forms.TableLayoutPanel();
             this.Tabla = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // Generar
@@ -136,7 +139,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(859, 213);
+            this.button1.Location = new System.Drawing.Point(859, 236);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(90, 46);
             this.button1.TabIndex = 6;
@@ -609,7 +612,7 @@
             // Tabla
             // 
             this.Tabla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tabla.Location = new System.Drawing.Point(855, 147);
+            this.Tabla.Location = new System.Drawing.Point(859, 164);
             this.Tabla.Name = "Tabla";
             this.Tabla.Size = new System.Drawing.Size(94, 46);
             this.Tabla.TabIndex = 21;
@@ -627,11 +630,32 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(930, 489);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(120, 26);
+            this.numericUpDown2.TabIndex = 24;
+            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(847, 491);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 25);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Hilos:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1082, 1044);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.table17x17);
             this.Controls.Add(this.table9x9);
@@ -655,7 +679,9 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -680,6 +706,8 @@
         private System.Windows.Forms.TableLayoutPanel table5x5;
         private System.Windows.Forms.Button Tabla;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

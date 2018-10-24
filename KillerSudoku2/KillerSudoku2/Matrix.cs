@@ -13,6 +13,7 @@ namespace KillerSudoku2
         public char[,] operation;
         public int[,] number;
         public int[,] sudoku;
+        public int[,] sudokuBack;
 
         public Matrix(int tamano)
         {
@@ -21,6 +22,7 @@ namespace KillerSudoku2
             this.operation = new char[tamano, tamano];
             this.number = new int[tamano, tamano];
             this.sudoku = new int[tamano, tamano];
+            this.sudokuBack = new int[tamano, tamano];
         }
 
         public void InitializePuzzle()
@@ -30,6 +32,7 @@ namespace KillerSudoku2
                 for (int c = 0; c < tam; c++)
                 {
                     sudoku[r, c] = 0;
+                    sudokuBack[r, c] = 0;
                 }
             }
         }
@@ -1005,6 +1008,7 @@ namespace KillerSudoku2
             return valor;
 
         }
+
         public int buscarNumber(int i, int j)
         {
             int valor = 0;
@@ -1024,6 +1028,7 @@ namespace KillerSudoku2
             return valor;
 
         }
+
         public char buscarOperation(int i, int j)
         {
             char valor = ' ';
@@ -1043,6 +1048,7 @@ namespace KillerSudoku2
             return valor;
 
         }
+
         public int buscarSudoku(int i, int j)
         {
            int valor = 0;
@@ -1140,6 +1146,70 @@ namespace KillerSudoku2
             return numMult;
         }
 
+
+        public Boolean Poda(int row, int col, int num)
+        {
+            for (int d = 0; d < tam; d++)
+            {
+                if (sudokuBack[row, d] == num)
+                {
+                    return false;
+                }
+            }
+            for (int r = 0; r < tam; r++)
+            {
+                if (sudokuBack[r, col] == num)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public Boolean Backtracking()
+        {
+            int row = -1;
+            int col = -1;
+            Boolean isEmpty = true;
+            for (int i = 0; i < tam; i++)
+            {
+                for (int j = 0; j < tam; j++)
+                {
+                    if (sudokuBack[i, j] == 0)
+                    {
+                        row = i;
+                        col = j;
+                        isEmpty = false;
+                        break;
+                    }
+                }
+                if (!isEmpty)
+                {
+                    break;
+                }
+            }
+            if (isEmpty)
+            {
+                return true;
+            }
+            for (int num = 1; num <= tam; num++)
+            {
+                if (Poda(row, col, num))
+                {
+                    sudokuBack[row, col] = num;
+                    if (SolveSudoku())
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        sudokuBack[row, col] = 0;
+                    }
+                }
+            }
+            return false;
+        }
 
     }
 }
